@@ -2,27 +2,30 @@
 
 1. Faça um programa que receba um número e verifique se ele é negativo ou não negativo.
 
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+'''
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
 
-namespace ConsoleApplication1
-{
-    class Program
+    namespace ConsoleApplication1
     {
-        static void Main(string[] args)
+        class Program
         {
-            Console.WriteLine("Digite um número");
-            double num = double.Parse(Console.ReadLine()); //Recebe na variavel o numero que foi digitado.
-            string resultado = "O número é: ";
-            resultado += num >= 0 ? " Positivo" : " Negativo"; // True e false
-            Console.WriteLine(resultado);
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Digite um número");
+                double num = double.Parse(Console.ReadLine()); //Recebe na variavel o numero que foi digitado.
+                string resultado = "O número é: ";
+                resultado += num >= 0 ? " Positivo" : " Negativo"; // True e false
+                Console.WriteLine(resultado);
+            }
         }
     }
-}
+'''
 
 2. Faça um programa que solicite a entrada de um número e exiba se o número é par ou ímpar.
 
+'''
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,9 +50,11 @@ namespace ConsoleApplication1
         }
     }
 }
+'''
 
 3. Faça um programa que compara a soma de dois números se o valor for maior que 10 incrementa a soma em 5. Se o valor for menor que 10, decrementa a soma em 7.
 
+'''
 using System;
 
 namespace ConsoleApp1
@@ -79,10 +84,12 @@ namespace ConsoleApp1
         }
     }
 }
+'''
 
 4. Faça um programa que solicite ao usuário duas notas e o respectivo peso de cada uma das notas de duas provas realizadas por um aluno e calcule a média ponderada.
 
-   using System;
+'''
+using System;
 
 namespace ConsoleApp1
 {
@@ -111,10 +118,11 @@ namespace ConsoleApp1
         }
     }
 }
-
+'''
     
 5. Faça um programa que calcule a velocidade média de um veículo qualquer, leia a distância percorrida pelo veículo e o tempo gasto no percurso. O cálculo da velocidade média é distância/tempo.
 
+'''
 using System;
 
 namespace ConsoleApp1
@@ -139,10 +147,12 @@ namespace ConsoleApp1
     }
 }
 
+'''
 
 6. Crie um programa que calcule o salário mensal de um vendedor de uma revendedora de carros. O vendedor recebe uma comissão por cada carro vendido e mais 5% sobre o valor total das vendas.
 Solicitar ao usuário o número de identificação do vendedor, seu salário fixo, a quantidade de carros vendidos, o valor da comissão por cada carro vendido e o valor total das vendas. Exibir o número de identificação e seu salário total.
 
+'''
 using System;
 
 namespace ConsoleApp1
@@ -176,6 +186,7 @@ namespace ConsoleApp1
         }
     }
 }
+'''
 
 7. Crie um programa que tenha como finalidade calcular o reajuste salarial de um funcionário. Solicitar ao
 usuário o código do funcionário e seu salário atual. Calcular o novo salário do funcionário de acordo com as condições:
@@ -194,8 +205,9 @@ Exibir para o usuário a seguinte mensagem: "O funcionário 123, teve um aumento
 e agora seu salário é: R$ 1545,00", caso o funcionário não tenha aumento exibir: "O funcionário 123,
 não teve aumento, o salário é: R$ 2100,00".
     > Utilizar a interpolação de strings e delimitar o número de casas decimais do salário.
-    
-    using System;
+
+'''    
+using System;
 
 namespace ConsoleApp1
 {
@@ -248,3 +260,4 @@ namespace ConsoleApp1
         }
     }
 }
+'''
